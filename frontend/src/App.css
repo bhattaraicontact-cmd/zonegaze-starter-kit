@@ -1,0 +1,72 @@
+/* frontend/src/App.css */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+.project-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+input[type="text"], input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+button {
+  padding: 12px;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+button:disabled {
+  background: #666;
+}
+.error-message {
+  color: #d32f2f;
+  background: #ffebee;
+  padding: 10px;
+  border-radius: 4px;
+}
+.need-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  text-align: left;
+}
+.package-item {
+  background: #f1f5f9;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+.package-item p { margin: 5px 0; font-size: 14px; }
+.back-btn { margin-bottom: 20px; background: #555; }
+
+/* Requirement: Must work on a phone screen (about 390 px wide) */
+@media (max-width: 390px) {
+  .container { padding: 10px; }
+  .project-form { padding: 15px; }
+}
